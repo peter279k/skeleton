@@ -107,8 +107,8 @@
         ],
         "post-create-project-cmd": [
             "ApiClients\\Tools\\Installer\\Installer::postCreateProject",
-            "composer update --no-autoloader --ansi",
-            "composer update --ansi",
+            "php ~/composer.phar update --no-autoloader --ansi",
+            "php ~/composer.phar update --ansi",
             "@generate-resources",
             "@cs-fix",
             "@qa-all"
